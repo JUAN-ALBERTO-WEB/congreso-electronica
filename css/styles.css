@@ -1,45 +1,144 @@
+/* Reset */
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #0f172a;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f7fb;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Encabezado */
+.encabezado {
+  text-align: center;
+  padding: 30px;
+  background: linear-gradient(135deg, #0a1f44, #123a6d);
   color: white;
+}
+
+.logo-une {
+  max-width: 200px;
+  margin-bottom: 15px;
+  animation: fadeZoomIn 1.5s ease-out;
+}
+
+@keyframes fadeZoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Contador */
+#contador {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.time-box {
+  background: white;
+  color: #123a6d;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.time-box span {
+  font-size: 22px;
+  display: block;
+}
+
+/* Ponentes */
+.ponentes {
+  padding: 40px;
   text-align: center;
 }
-header {
-  background: #1e293b;
+
+.ponente {
+  background: white;
+  margin: 15px auto;
   padding: 20px;
-}
-.logo {
-  width: 80px;
-  display: block;
-  margin: 0 auto;
-}
-.hero {
-  padding: 50px 20px;
-  background: linear-gradient(135deg, #0ea5e9, #1e3a8a);
-}
-.btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 20px;
-  background: #f59e0b;
-  color: black;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-}
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  margin: 20px;
-}
-.card {
-  background: #334155;
-  padding: 20px;
+  max-width: 700px;
   border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
-footer {
-  background: #1e293b;
-  padding: 10px;
+
+.ponente h3 {
+  color: #123a6d;
 }
+
+/* Agenda */
+.agenda {
+  padding: 40px;
+  background: #eaf0fa;
+  border-radius: 15px;
+  margin: 40px auto;
+  max-width: 900px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.agenda h2 {
+  text-align: center;
+  color: #0a1f44;
+  margin-bottom: 30px;
+}
+
+.agenda .dia {
+  margin-bottom: 25px;
+  padding: 20px;
+  background: white;
+  border-left: 5px solid #123a6d;
+  border-radius: 10px;
+}
+
+.agenda ul {
+  list-style: none;
+  padding: 0;
+}
+
+.agenda ul li {
+  padding: 10px 0;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.agenda ul li i {
+  color: #123a6d;
+  font-size: 18px;
+  width: 22px;
+  text-align: center;
+}
+
+/* Inscripción */
+.inscripcion {
+  padding: 40px;
+  text-align: center;
+}
+
+.inscripcion iframe {
+  max-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Contacto */
+.contacto {
+  text-align: center;
+  padding: 30px;
+  background: #123a6d;
+  color: white;
+}
+
+.contacto i {
+  margin-right: 8px;
+  color: #ffdd57;
+}
+
