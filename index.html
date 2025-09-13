@@ -3,68 +3,106 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Congreso de Electrónica e Informática - TechFuture 2025</title>
+  <title>Congreso Internacional de Electrónica e Informática</title>
+
+  <!-- Estilos -->
   <link rel="stylesheet" href="css/styles.css">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+  <!-- AOS Animations -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
 </head>
 <body>
+  <!-- Encabezado -->
   <header class="encabezado">
-  <img src="images/logo-une.png" alt="Logo Universidad Nacional de Educación Enrique Guzmán y Valle" class="logo-une">
-  <h1>Congreso Internacional de Electrónica e Informática</h1>
-  <p>2 al 5 de octubre · Facultad de Tecnología - UNE</p>
-</header>
+    <img src="images/logo-une.png" alt="Logo UNE" class="logo-une">
+    <h1 data-aos="fade-up">Congreso Internacional de Electrónica e Informática</h1>
+    <p data-aos="fade-up" data-aos-delay="200">2 al 5 de octubre · Facultad de Tecnología - UNE</p>
 
-  <header>
-    <img src="logo-une.png" alt="Logo UNE" class="logo">
-    <h1>TechFuture 2025: Congreso de Electrónica e Informática</h1>
+    <!-- Contador -->
+    <div id="contador" data-aos="zoom-in"></div>
   </header>
 
-  <section class="hero" data-aos="fade-up">
-    <h2>Del 2 al 5 de Octubre, 2025</h2>
-    <p>Universidad Nacional de Educación Enrique Guzmán y Valle</p>
-    <div id="contador"></div>
-    <a href="#registro" class="btn">Regístrate Ahora</a>
-  </section>
-
-  <section class="ponentes" data-aos="fade-right">
-    <h2>Ponentes</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>ARMAS CASTAÑEDA RICHARD MILLER</h3>
-        <p>Automatización, Inteligencia Artificial y Realidad Aumentada aplicados a la educación, comercio e industria.</p>
-      </div>
-      <div class="card">
-        <h3>ORTIZ VERGARA MARTIN WILLIAM</h3>
-        <p>Electrónica, Informática y su aplicación en la Ingeniería Industrial y Mecatrónica.</p>
-      </div>
-      <div class="card">
-        <h3>ROMERO SANDOVAL JULIO AMARILDO</h3>
-        <p>Telecomunicaciones, investigación y formación profesional en electrónica.</p>
-      </div>
-      <div class="card">
-        <h3>SORIA CUELLAR FIDEL TADEO</h3>
-        <p>Administración educacional y nuevas perspectivas en la enseñanza de la electrónica.</p>
-      </div>
+  <!-- Ponentes -->
+  <section id="ponentes" class="ponentes">
+    <h2 data-aos="fade-right">Ponentes</h2>
+    <div class="ponente" data-aos="zoom-in">
+      <h3>Richard Miller Armas Castañeda</h3>
+      <p>Licenciado en Educación en Electrónica, docente universitario, instructor CCNA, asesor en telecomunicaciones e investigador en IA y Realidad Aumentada.</p>
+    </div>
+    <div class="ponente" data-aos="zoom-in" data-aos-delay="200">
+      <h3>Martín William Ortiz Vergara</h3>
+      <p>Docente en Electrónica e Informática con experiencia en Ingeniería Industrial, Mecatrónica y Electrónica.</p>
+    </div>
+    <div class="ponente" data-aos="zoom-in" data-aos-delay="400">
+      <h3>Julio Amarildo Romero Sandoval</h3>
+      <p>Docente de Electrónica y Telecomunicaciones, investigador en sistemas integrados y automatización.</p>
+    </div>
+    <div class="ponente" data-aos="zoom-in" data-aos-delay="600">
+      <h3>Fidel Tadeo Soria Cuellar</h3>
+      <p>Doctor en Ciencias de la Educación, docente de Electrónica, investigador en calidad educativa y telecomunicaciones.</p>
     </div>
   </section>
 
-  <section id="registro" class="registro" data-aos="fade-left">
-    <h2>Registro</h2>
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfly3wnkyvhS795oPQ8yMCqX8781H9Np5x2NhU99jCRoErwsA/viewform?embedded=true" width="640" height="1055" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+  <!-- Agenda -->
+  <section id="agenda" class="agenda">
+    <h2 data-aos="fade-right">Agenda del Congreso</h2>
+
+    <div class="dia" data-aos="fade-up">
+      <h3>📅 Día 1 - 2 de octubre</h3>
+      <ul>
+        <li><i class="fas fa-flag"></i> <strong>09:00 - 10:00</strong> · Ceremonia de apertura</li>
+        <li><i class="fas fa-microphone"></i> <strong>10:00 - 13:00</strong> · Ponencia: Inteligencia Artificial aplicada a la educación (Richard Miller Armas Castañeda)</li>
+        <li><i class="fas fa-robot"></i> <strong>14:00 - 17:00</strong> · Ponencia: Automatización y sistemas integrados (Julio Amarildo Romero Sandoval)</li>
+      </ul>
+    </div>
+
+    <div class="dia" data-aos="fade-up">
+      <h3>📅 Día 2 - 3 de octubre</h3>
+      <ul>
+        <li><i class="fas fa-laptop-code"></i> <strong>09:00 - 12:00</strong> · Ponencia: Innovaciones en Electrónica e Informática (Martín William Ortiz Vergara)</li>
+        <li><i class="fas fa-network-wired"></i> <strong>13:00 - 16:00</strong> · Ponencia: Retos en telecomunicaciones y calidad educativa (Fidel Tadeo Soria Cuellar)</li>
+        <li><i class="fas fa-tools"></i> <strong>16:00 - 17:00</strong> · Taller práctico de robótica educativa</li>
+      </ul>
+    </div>
+
+    <div class="dia" data-aos="fade-up">
+      <h3>📅 Día 3 - 5 de octubre</h3>
+      <ul>
+        <li><i class="fas fa-lightbulb"></i> <strong>09:00 - 12:00</strong> · Panel de innovación tecnológica</li>
+        <li><i class="fas fa-vr-cardboard"></i> <strong>13:00 - 15:00</strong> · Feria tecnológica y demostraciones</li>
+        <li><i class="fas fa-award"></i> <strong>15:00 - 16:00</strong> · Clausura y entrega de certificados</li>
+      </ul>
+    </div>
   </section>
 
-  <section class="contacto" data-aos="fade-up">
+  <!-- Inscripción -->
+  <section id="inscripcion" class="inscripcion" data-aos="fade-left">
+    <h2>Inscríbete al Congreso</h2>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfly3wnkyvhS795oPQ8yMCqX8781H9Np5x2NhU99jCRoErwsA/viewform?embedded=true"
+            width="640" height="1055" frameborder="0" marginheight="0" marginwidth="0">Cargando…
+    </iframe>
+  </section>
+
+  <!-- Contacto -->
+  <section id="contacto" class="contacto" data-aos="fade-up">
     <h2>Contacto</h2>
-    <p>📍 Av. Enrique Guzmán y Valle N° 951 - Chosica</p>
-    <p>📞 +51 952 703 507</p>
+    <p><i class="fas fa-map-marker-alt"></i> Av. Enrique Guzmán y Valle N° 951 - Chosica</p>
+    <p><i class="fas fa-phone"></i> +51 952 703 507</p>
   </section>
 
-  <footer>
-    <p>&copy; 2025 Congreso de Electrónica e Informática - UNE</p>
-  </footer>
+  <!-- JS -->
+  <script src="js/main.js" defer></script>
 
-  <script src="js/main.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>AOS.init();</script>
+  <!-- AOS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1200,
+      once: true
+    });
+  </script>
 </body>
 </html>
