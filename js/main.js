@@ -6,8 +6,6 @@ function actualizarContador() {
   const ahora = new Date().getTime();
   const diferencia = fechaEvento - ahora;
 
-;
-
   if (diferencia < 0) {
     contador.innerHTML = "¡El Congreso ha comenzado!";
     return;
@@ -27,3 +25,4 @@ function actualizarContador() {
 }
 
 setInterval(actualizarContador, 1000);
+
